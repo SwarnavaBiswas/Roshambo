@@ -45,7 +45,7 @@ const commitChoice = () => {
     }
     lastComputerChoice = computerChoice.toLowerCase();
     messageFirstChild.innerHTML = `Computer chooses ${computerChoice}`;
-    displayChoiceSelected(document.getElementById("computerChoiceDisplayer"), `url(static/${computerChoice}.png)`)
+    displayChoiceSelected(document.getElementById("computerChoiceDisplayer"), `url(static/${lastComputerChoice}.png)`)
     decideSetWinner();
 }
 
