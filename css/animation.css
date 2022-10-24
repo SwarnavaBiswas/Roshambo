@@ -1,0 +1,22 @@
+@keyframes bgAnimate {
+    from{
+        background-color: #9ff9f9;
+    }
+    to{
+        background-color: #71d4d4;
+    }
+}
+@keyframes welcomeAnimate {
+    0%{
+        color: red;
+    }
+    33%{
+        color: green;
+    }
+    67%{
+        color: blue;
+    }
+    100%{
+        color: red;
+    }
+}

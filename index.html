@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Swarnava Biswas">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Rock, Paper Scissors!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="fullContainerScreen" id="startscreen">
+            <h1>Welcome!</h1>
+            <p>The objective is to beat the Computer in a Rock, Paper, Scissor game! The competitor who reaches the score of 10 first will win!</p>
+            <button class="styledButton" id="startButton">Start the Game!</button>
+        </div>
+        <div class="fullContainerScreen" id="endscreen">
+            <p></p>
+            <button class="styledButton" id="playAgainButton">Play Again!</button>
+        </div>
+        <div class="outputDisplay mainscreen">
+            <div class="message" id="importantMessageContainer">
+                <p>Testing</p>
+            </div>
+            <div id="userChoiceDisplay" class="display">
+                <div class="scoreBoard" id="userScoreBoard">
+                    <p>0</p>
+                </div>
+                <div class="displayer" id="userChoiceDisplayer"></div>
+                <div class="competitorDisplayer" id="playerName">
+                    <p>Player</p>
+                </div>
+            </div>
+            <div class="separator" id="displaySeparator"></div>
+            <div id="computerChoiceDisplay" class="display">
+                <div class="scoreBoard" id="computerScoreBoard">
+                    <p>0</p>
+                </div>
+                <div class="displayer" id="computerChoiceDisplayer"></div>
+                <div class="competitorDisplayer" id="computerName">
+                    <p>Computer</p>
+                </div>
+            </div>
+        </div>
+        <div class="choicesDisplay mainscreen">
+            <div class="choicesContainer">
+                <div class="choices" id="rock"></div>
+                <div class="choices" id="paper"></div>
+                <div class="choices" id="scissor"></div>
+            </div>
+            <div class="messageContainer">
+                <div class="message">
+                    <p>Choose your next move!</p>
+                </div>
+                <div class="buttonContainer">
+                    <button class="styledButton" id="continueButton">Continue...</button>
+                </div>
+            </div>
+        </div>
+        <div id="aboutAuthorContainer">
+            <div id="flavicon"><img src="static/favicon.ico" alt="SB"></div>
+            <div id="aboutAuthor">Created by Swarnava Biswas</div>
+        </div>
+    </div>
+    <script src="js/animation.js"></script>
+    <script src="js/gameController.js"></script>
+    <script src="js/adjusters.js"></script>
+    <script src="js/infoAdjustersAnimators.js"></script>
+</body>
+</html>

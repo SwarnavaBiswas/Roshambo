@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --authorFlaviconWidth: 25px;
+}
+
+.container{
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: bgAnimate 2s ease-in-out infinite alternate;
+    overflow: hidden;
+}
+.outputDisplay{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* justify-content: center;
+    align-items: center;  */
+}
+.display{
+    /* box-sizing: border-box; */
+    height: 100%;
+    width: calc(50% - 1px);
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.competitorDisplayer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    font-size: 1.2em;
+    background-color: #88cfd1;
+    color: #2e6868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#displaySeparator{
+    height: 100%;
+    width: 1px;
+    background-color: #80808045;
+}
+.choicesDisplay{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.choicesContainer{
+    max-height: 65%;
+    min-height: 35%;
+    width: 72%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+}
+.messageContainer{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    font-size: x-large;
+}
+.choices{
+    /* height: 100%;
+    width: 20%; */
+    border: 2px solid green;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+#rock{
+    background-image: url('../static/rock.png');
+}
+#paper{
+    background-image: url('../static/paper.png');
+}
+#scissor{
+    background-image: url('../static/scissor.png');
+}
+.displayer{
+    /* display: none; */
+    /* width: 25%;
+    height: 50%; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    border: 2px solid yellow;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+#importantMessageContainer{
+    display: none;
+    position: absolute;
+    top: 20%;
+    font-size: 1.5em;
+    color: darkgreen;
+}
+.styledButton{
+    background-color: rgb(48, 18, 18);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 1em;
+    transition: all ease-in-out 0.1s;
+}
+#playAgainButton{
+    position: relative;
+    padding: 1em;
+}
+#continueButton{
+    padding: 10%;
+    display: none;
+}
+.styledButton:hover{
+    background-color: rgb(65, 26, 26);
+    color: rgb(161, 231, 208);
+}
+.styledButton:active{
+    background-color: black;
+    color: aqua;
+}
+
+.scoreBoard{
+    position: absolute;
+    background-color: #e0ebbc;
+    top: 0;
+    width: 25%;
+    height: 50%;
+    /* border: 1px solid purple; */
+    border-bottom: 2px groove grey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+#userScoreBoard{
+    left: 0px;
+    border-right: 2px groove grey;
+}
+#computerScoreBoard{
+    right: 0px;
+    border-left: 2px groove grey;
+}
+.fullContainerScreen{
+    display: none;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#endscreen p{
+    font-size: 1.5em;
+    margin: 5%;
+}
+
+#startButton{
+    padding: 1em;
+}
+#startscreen *{
+    margin: 1em;
+}
+#startscreen h1{
+    animation: welcomeAnimate 4s ease-in-out infinite;
+}
+#startscreen p{
+    font-size: 1.25em;
+}
+
+#flavicon img{
+    width: var(--authorFlaviconWidth);
+    height: var(--authorFlaviconWidth);
+}
+#aboutAuthorContainer{
+    position: absolute;
+    background-color: rgb(58, 48, 48);
+    color: white;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform ease-in-out 1s;
+    z-index: 3;
+}
+#aboutAuthorContainer div{
+    padding: 0.5em;
+}
